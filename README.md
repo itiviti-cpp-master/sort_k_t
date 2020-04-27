@@ -15,7 +15,7 @@ Yuri		Gagarin		1934-1968
 Gherman		Titov		1935-2000
 Valentina	Tereshkova	1937
 Vladimir	Komarov		1927-1967
-$ sort e.txt -k 2 # Sort by second column: by name
+$ sort e.txt -k 2 # Sort by second column: by second name
 Yuri		Gagarin		1934-1968
 Vladimir	Komarov		1927-1967
 Valentina	Tereshkova	1937
