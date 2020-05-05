@@ -19,11 +19,11 @@ add_test(
     )
 add_test(
     NAME sort-k2
-    COMMAND sh -c "${PROJECT_SOURCE_DIR}/test-2.sh $<TARGET_FILE:sort> ${TEST_DATA}"
+    COMMAND sh -c "${PROJECT_SOURCE_DIR}/test-k2.sh $<TARGET_FILE:sort> ${TEST_DATA}"
     )
 add_test(
     NAME sort-k3
-    COMMAND sh -c "${PROJECT_SOURCE_DIR}/test-3.sh $<TARGET_FILE:sort> ${TEST_DATA}"
+    COMMAND sh -c "${PROJECT_SOURCE_DIR}/test-k3.sh $<TARGET_FILE:sort> ${TEST_DATA}"
     )
 add_test(
     NAME sort-k1-t-
