@@ -33,3 +33,23 @@ add_test(
     NAME sort-k2-t-
     COMMAND sh -c "${PROJECT_SOURCE_DIR}/test-k2-t-.sh $<TARGET_FILE:sort> ${TEST_DATA}"
     )
+add_test(
+    NAME sort-key1
+    COMMAND sh -c "${PROJECT_SOURCE_DIR}/test--key=1.sh $<TARGET_FILE:sort> ${TEST_DATA}"
+    )
+add_test(
+    NAME sort-key12
+    COMMAND sh -c "${PROJECT_SOURCE_DIR}/test--key=1,2.sh $<TARGET_FILE:sort> ${TEST_DATA}"
+    )
+add_test(
+    NAME sort-k1-field-separator-
+    COMMAND sh -c "${PROJECT_SOURCE_DIR}/test-k1--field-separator=-.sh $<TARGET_FILE:sort> ${TEST_DATA}"
+    )
+add_test(
+    NAME sort-k2-ta
+    COMMAND sh -c "${PROJECT_SOURCE_DIR}/test-k2-ta.sh $<TARGET_FILE:sort> ${TEST_DATA}"
+    )
+add_test(
+    NAME sort-k23
+    COMMAND sh -c "${PROJECT_SOURCE_DIR}/test-k2,3.sh $<TARGET_FILE:sort> ${TEST_DATA}"
+    )
